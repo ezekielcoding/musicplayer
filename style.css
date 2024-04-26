@@ -151,3 +151,15 @@ h3{
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+.watermark {
+    font-weight: 900;
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity as needed */
+    pointer-events: none; /* Ensure the watermark doesn't interfere with mouse events */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add a glow effect */
+}
