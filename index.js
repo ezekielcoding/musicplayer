@@ -18,7 +18,7 @@ const songs = [
         displayName: 'XO Tour Llif3',
         cover: 'assets/1.jpg',
         artist: 'Lil Uzi Vert',
-    },
+    }, 
     {
         path: 'assets/2.mp3',
         displayName: 'UR THE MOON',
@@ -102,7 +102,38 @@ const songs = [
         displayName: 'Pop Out',
         cover: 'assets/15.jpg',
         artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/16.mp3',
+        displayName: 'Molly',
+        cover: 'assets/16.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/17.mp3',
+        displayName: 'Cancun',
+        cover: 'assets/17.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/18.mp3',
+        displayName: 'Mob Ties',
+        cover: 'assets/18.jpg',
+        artist: 'YEAT'
+    },
+    {
+        path: 'assets/19.mp3',
+        displayName: 'H00DBYAIR',
+        cover: 'assets/19.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/20.mp3',
+        displayName: 'Skeleton',
+        cover: 'assets/20.jpg',
+        artist: 'Playboi Carti'
     }
+    
 ];
 
 let musicIndex = 0;
