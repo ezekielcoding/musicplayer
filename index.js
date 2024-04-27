@@ -132,8 +132,49 @@ const songs = [
         displayName: 'Skeleton',
         cover: 'assets/20.jpg',
         artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/21.mp3',
+        displayName: '2024',
+        cover: 'assets/8.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/22.mp3',
+        displayName: 'It Smells Like Reefah Out Here',
+        cover: 'assets/22.jpg',
+        artist: 'Don Toliver'
+    },
+    {
+        path: 'assets/23.mp3',
+        displayName: 'Mention Me',
+        cover: 'assets/23.jpg',
+        artist: 'Drake'
+    },
+    {
+        path: 'assets/24.mp3',
+        displayName: 'Mission To The Loot',
+        cover: 'assets/24.jpg',
+        artist: 'Lil Uzi Vert'
+    },
+    {
+        path: 'assets/25.mp3',
+        displayName: 'Pissy Pamper',
+        cover: 'assets/25.jpg',
+        artist: 'Kid Cudi x Playboi Carti'
+    },
+    {
+        path: 'assets/26.mp3',
+        displayName: 'Molly My Bean',
+        cover: 'assets/26.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/27.mp3',
+        displayName: 'Yes You Can',
+        cover: 'assets/27.jpg',
+        artist: 'Young Thug'
     }
-    
 ];
 
 let musicIndex = 0;
@@ -173,6 +214,7 @@ function loadMusic(song) {
     background.src = song.cover;
 }
 
+
 function changeMusic(direction) {
     musicIndex = (musicIndex + direction + songs.length) % songs.length;
     loadMusic(songs[musicIndex]);
@@ -203,3 +245,9 @@ music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 
 loadMusic(songs[musicIndex]);
+
+const volumeSlider = document.getElementById('volume-slider');
+volumeSlider.addEventListener('input', () => {
+    const volume = volumeSlider.value / 100;
+    music.volume = volume;
+});
