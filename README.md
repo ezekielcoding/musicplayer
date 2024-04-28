@@ -1,5 +1,3 @@
-Music Player
+A music player thats better than spotify ong
 
 https://betterthanspotify.com/
-
-New Songs
