@@ -15,9 +15,9 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/1.mp3',
-        displayName: 'XO Tour Llif3',
+        displayName: 'Juice WRLD DID',
         cover: 'assets/1.jpg',
-        artist: 'Lil Uzi Vert',
+        artist: 'DJ Khaled x Juice World',
     }, 
     {
         path: 'assets/2.mp3',
@@ -41,7 +41,7 @@ const songs = [
         path: 'assets/5.mp3',
         displayName: 'She Said Shes From The Islands',
         cover: 'assets/5.jpg',
-        artist: 'Tomo x Frozy',
+        artist: 'Rarin x Frozy',
     },
     {
         path: 'assets/6.mp3',
@@ -81,19 +81,19 @@ const songs = [
     },
     {
         path: 'assets/12.mp3',
-        displayName: 'I LUV IT [CARTI ONLY]',
+        displayName: 'I LUV IT',
         cover: 'assets/12.jpg',
         artist: 'Playboi Carti',
     },
     {
         path: 'assets/13.mp3',
         displayName: 'SDP Interlude',
-        cover: 'assets/13.jpg',
+        cover: 'assets/13.jpeg',
         artist: 'Travis Scott',
     },
     {
         path: 'assets/14.mp3',
-        displayName: 'Havana [YOUNG THUG ONLY]',
+        displayName: 'Havana',
         cover: 'assets/14.jpg',
         artist: 'Young Thug',
     },
@@ -166,7 +166,7 @@ const songs = [
     {
         path: 'assets/26.mp3',
         displayName: 'Molly My Bean',
-        cover: 'assets/26.jpg',
+        cover: 'assets/9.jpg',
         artist: 'Playboi Carti'
     },
     {
@@ -174,7 +174,44 @@ const songs = [
         displayName: 'Yes You Can',
         cover: 'assets/27.jpg',
         artist: 'Young Thug'
+    },
+    {
+        path: 'assets/28.mp3',
+        displayName: 'Neva Changed',
+        cover: 'assets/4.jpg',
+        artist: 'YEAT'
+    },
+    {
+        path: 'assets/29.mp3',
+        displayName: 'Woke Up',
+        cover: 'assets/29.jpg',
+        artist: 'Gunna'
+    },
+    {
+        path: 'assets/30.mp3',
+        displayName: 'Evil',
+        cover: 'assets/30.jpg',
+        artist: 'Doov'
+    },
+    {
+        path: 'assets/31.mp3',
+        displayName: 'Still Here',
+        cover: 'assets/31.jpg',
+        artist: 'Lil Yachty'
+    },
+    {
+        path: 'assets/32.mp3',
+        displayName: 'Whole Lotta Red',
+        cover: 'assets/32.jpg',
+        artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/33.mp3',
+        displayName: 'Supervillain',
+        cover: 'assets/33.jpg',
+        artist: 'Playboi Carti'
     }
+    
 ];
 
 let musicIndex = 0;
