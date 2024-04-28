@@ -117,10 +117,10 @@ h3{
 }
 
 
-.player-controls{
+.player-controls {
     position: relative;
+    left: 95px;
     top: -15px;
-    left: 120px;
     width: 200px;
 }
 
@@ -205,5 +205,27 @@ h3{
     border-radius: 50%;
     cursor: pointer;
 }
+
+.repeat-button {
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+    margin-left: 10px; /* Adjust the margin to separate it from player functions */
+    position: relative;
+    top: -33px; /* Adjust as needed */
+    left: 170px; /* Adjust as needed */
+}
+
+
+.repeat-button:hover {
+    filter: brightness(40%);
+}
+
+.repeat-button.active {
+    color: #20d347; /* Change color to indicate activation */
+}
+
 
 
