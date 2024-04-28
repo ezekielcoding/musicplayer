@@ -10,7 +10,14 @@ const image = document.getElementById('cover'),
     playBtn = document.getElementById('play'),
     background = document.getElementById('bg-img');
 
+window.addEventListener('load', () => {
+    loadMusic(songs[musicIndex]);
+});
+
 const music = new Audio();
+let musicIndex = 0;
+let isPlaying = false;
+let isRepeat = false;
 
 const songs = [
     {
@@ -210,12 +217,16 @@ const songs = [
         displayName: 'Supervillain',
         cover: 'assets/33.jpg',
         artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/34.mp3',
+        displayName: 'WOK',
+        cover: 'assets/34.jpg',
+        artist: 'Playboi Carti'
     }
     
+    
 ];
-
-let musicIndex = 0;
-let isPlaying = false;
 
 function togglePlay() {
     if (isPlaying) {
@@ -227,18 +238,14 @@ function togglePlay() {
 
 function playMusic() {
     isPlaying = true;
-    // Change play button icon
     playBtn.classList.replace('fa-play', 'fa-pause');
-    // Set button hover title
     playBtn.setAttribute('title', 'Pause');
     music.play();
 }
 
 function pauseMusic() {
     isPlaying = false;
-    // Change pause button icon
     playBtn.classList.replace('fa-pause', 'fa-play');
-    // Set button hover title
     playBtn.setAttribute('title', 'Play');
     music.pause();
 }
@@ -250,7 +257,6 @@ function loadMusic(song) {
     image.src = song.cover;
     background.src = song.cover;
 }
-
 
 function changeMusic(direction) {
     musicIndex = (musicIndex + direction + songs.length) % songs.length;
@@ -274,17 +280,36 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
+function toggleRepeat() {
+    isRepeat = !isRepeat;
+    if (isRepeat) {
+        repeatBtn.classList.add('active');
+    } else {
+        repeatBtn.classList.remove('active');
+    }
+}
+
+function playNextSong() {
+    if (isRepeat) {
+        music.currentTime = 0;
+        music.play();
+    } else {
+        changeMusic(1);
+    }
+}
+
 playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
 nextBtn.addEventListener('click', () => changeMusic(1));
-music.addEventListener('ended', () => changeMusic(1));
+music.addEventListener('ended', playNextSong);
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
-
-loadMusic(songs[musicIndex]);
 
 const volumeSlider = document.getElementById('volume-slider');
 volumeSlider.addEventListener('input', () => {
     const volume = volumeSlider.value / 100;
     music.volume = volume;
 });
+
+const repeatBtn = document.getElementById('repeat');
+repeatBtn.addEventListener('click', toggleRepeat);
