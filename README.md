@@ -20,7 +20,10 @@ https://betterthanspotify.com/
 
 ## Update Log
 Friday, 26 April 2024 - Website created
+
 Saturday, 27 April 2024 - Volume slider added
+
 Sunday, 28 April 2024 - Song drop, cover images changed, higher quality audio for "24 Songs By Carti"
+
 Sunday, 28 April 2024 - Repeat button added and new song
 
