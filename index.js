@@ -223,6 +223,12 @@ const songs = [
         displayName: 'WOK',
         cover: 'assets/34.jpg',
         artist: 'Playboi Carti'
+    },
+    {
+        path: 'assets/35.mp3',
+        displayName: 'President',
+        cover: 'assets/35.jpg',
+        artist: 'Destroy Lonely ft. Ken Carson'
     }
     
     
