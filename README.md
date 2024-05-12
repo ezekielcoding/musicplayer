@@ -29,4 +29,4 @@ Sunday, 28 April 2024 - Repeat button added and new song
 
 Sunday, 12 May 2024 - Audio Circle Removed and New song
 
-Sunday, 12 May 2024 - New Search Bar & Optimized JS Code
+Sunday, 12 May 2024 - New Search Bar & Optimized JS Code, Console and HTML "BTS" ANSCII
