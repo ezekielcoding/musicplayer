@@ -229,6 +229,12 @@ const songs = [
         displayName: 'President',
         cover: 'assets/35.jpg',
         artist: 'Destroy Lonely ft. Ken Carson'
+    },
+    {
+        path: 'assets/36.mp3',
+        displayName: 'Ménage',
+        cover: 'assets/36.jpg',
+        artist: 'Lil Uzi Vert x Playboi Carti'
     }
     
     
