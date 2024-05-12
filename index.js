@@ -261,8 +261,6 @@ function playMusic() {
     playBtn.classList.replace('fa-play', 'fa-pause');
     playBtn.setAttribute('title', 'Pause');
     music.play();
-    captureBackgroundColor(); // Capture background color and update audio wave color
-    animateAudioWave(true); // Start the animation
 }
 
 function pauseMusic() {
@@ -270,16 +268,6 @@ function pauseMusic() {
     playBtn.classList.replace('fa-pause', 'fa-play');
     playBtn.setAttribute('title', 'Play');
     music.pause();
-    animateAudioWave(false); // Stop the animation
-}
-
-function animateAudioWave(isPlaying) {
-    const audioWave = document.querySelector('.audio-wave');
-    if (isPlaying) {
-        audioWave.style.display = 'block'; // Show the audio wave
-    } else {
-        audioWave.style.display = 'none'; // Hide the audio wave
-    }
 }
 
 function loadMusic(song) {
