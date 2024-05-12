@@ -232,6 +232,47 @@ h3{
     --audio-wave-color: #ffffff; /* Default color */
 }
 
+.search-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000000;
+    background: transparent; /* Transparent background */
+}
+
+#search-input::placeholder {
+    color: #000000;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+
+
+
+
 
 
 
